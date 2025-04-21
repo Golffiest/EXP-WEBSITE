@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Expanet Corp</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-out;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Back to top button */
+    #backToTop {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #1e3a8a;
+      color: white;
+      border-radius: 9999px;
+      width: 50px;
+      height: 50px;
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 50;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Floating contact icons */
+    .floating-contact {
+      position: fixed;
+      right: 20px;
+      bottom: 100px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      z-index: 50;
+    }
+
+    .floating-contact a {
+      background: white;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+      transition: transform 0.2s ease;
+    }
+
+    .floating-contact a:hover {
+      transform: scale(1.1);
+    }
+
+    .floating-contact img {
+      width: 26px;
+      height: 26px;
+    }
+  </style>
+</head>
+<body class="text-gray-800 font-sans bg-white">
+
+  <!-- Hero Banner -->
+  <section class="relative min-h-screen flex justify-center items-center px-4 pt-20">
+    <img src="FB COVER PAGE.png" alt="Hero Banner" class="w-full h-auto max-h-[90vh] object-cover rounded-xl shadow-md" />
+  </section>
+
+  <!-- About us -->
+  <section class="py-20 bg-white text-center fade-up">
+    <h2 class="text-3xl font-bold mb-6">About Us</h2>
+    <p class="max-w-xl mx-auto mb-10 text-gray-600">บริษัท Expanet Corp เราคือผู้ให้บริการด้าน IT & Digital Solution ครบวงจร 
+      ที่พร้อมช่วยธุรกิจของคุณก้าวสู่ยุคดิจิทัลอย่างมั่นคงและมีประสิทธิภาพ เราให้บริการทั้งในด้าน ระบบ IT Infrastructure, Cloud Solutions, System Integration, Business Process Outsourcing (BPO) 
+      รวมถึง ที่ปรึกษาด้านเทคโนโลยี ที่ตอบโจทย์ทุกขนาดของธุรกิจ <br>
+      <br> 
+       สิ่งที่เราให้ความสำคัญไม่ใช่แค่การติดตั้งหรือวางระบบเทคโนโลยีเท่านั้น แต่เรามุ่งเน้นไปที่การเพิ่มประสิทธิภาพการทำงาน, 
+      ลดขั้นตอนที่ซ้ำซ้อน, ลดต้นทุนในระยะยาว และช่วยให้ทีมของคุณสามารถโฟกัสกับสิ่งที่สำคัญที่สุด – คือ การเติบโตของธุรกิจ
+
+
+    </p>
+    <div class="flex justify-center flex-wrap gap-10 text-blue-700 text-lg font-semibold">
+      <div>🧠 Expertise</div>
+      <div>🔐 Security</div>
+      <div>🚀 Scalability</div>
+      <div>🤝 Partnership</div>
+    </div>
+  </section>
+
+  <!-- Clients Carousel -->
+  <section class="py-16 bg-white text-center fade-up">
+    <h2 class="text-2xl font-bold mb-10">Trusted By</h2>
+    <div class="swiper mySwiper px-4">
+      <div class="swiper-wrapper">
+        <!-- Client Slides (Update src as needed) -->
+        <div class="swiper-slide text-center">
+          <img src="client-thpd.png" alt="THPD" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">THPD</p>
+          <p class="text-sm text-gray-500">Contact Center 24x7x365 implemented</p>
+        </div>
+        <div class="swiper-slide text-center">
+          <img src="client-majorcineplex.png" alt="Major Cineplex" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">Major Cineplex</p>
+          <p class="text-sm text-gray-500"> SaaS implemented & Cloud Migration.</p>
+        </div>
+        <div class="swiper-slide text-center">
+          <img src="client-samsung.png" alt="Samsung" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">Samsung</p>
+          <p class="text-sm text-gray-500">Contact Center 24x7x365 implemented</p>
+        </div>
+        <div class="swiper-slide text-center">
+          <img src="client-lg.png" alt="LG" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">LG Laundry Crew</p>
+          <p class="text-sm text-gray-500">Contact Center 24x7x365 implemented</p>
+        </div>
+        <div class="swiper-slide text-center">
+          <img src="client-uwash.png" alt="UWASH" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">UWASH</p>
+          <p class="text-sm text-gray-500">Contact Center 24x7x365 implemented</p>
+        </div>
+        <div class="swiper-slide text-center">
+          <img src="client-alanhops.png" alt="ALANHOPS" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">ALANHOPS</p>
+          <p class="text-sm text-gray-500">BPO & Contact Center 24x7x365 implemented</p>
+        </div>
+        <div class="swiper-slide text-center">
+          <img src="client-rq.png" alt="อมรและบุตร จำกัด" class="w-24 h-24 rounded-full mx-auto object-contain shadow-md" />
+          <p class="mt-3 font-semibold">อมรและบุตร</p>
+          <p class="text-sm text-gray-500">Contact Center 24x7x365 implemented</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+<section class="py-20 bg-gray-50 text-center fade-up">
+  <h2 class="text-3xl font-bold mb-10">Our End-to-End Services</h2>
+  <div class="grid md:grid-cols-3 gap-10 px-6">
+
+    <!-- Card 1 - BPO & Consultant -->
+<div class="p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 fade-up w-full h-[400px] flex flex-col justify-center items-center bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-gray-800 transform hover:-translate-y-2">
+  <img src="bpo-icon.png" alt="BPO Icon" class="w-20 h-20 mb-4 transition-transform duration-300 hover:scale-110">
+  <h3 class="text-xl font-semibold mb-2">BPO & Consultant</h3>
+  <p>บริการ BPO และที่ปรึกษาช่วยให้ธุรกิจของคุณมีประสิทธิภาพสูงสุด <br>
+    โดยการจัดการกระบวนการต่างๆและให้คำแนะนำอย่างมืออาชีพ <br>
+    เราช่วยลดต้นทุนและเพิ่มผลลัพธ์ที่ดีที่สุดตามเป้าหมายธุรกิจของคุณ</p>
+</div>
+
+<!-- Card 2 - Cloud Contact Center -->
+<div class="p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 fade-up w-full h-[400px] flex flex-col justify-center items-center bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-gray-800 transform hover:-translate-y-2">
+  <img src="cc-icon.png" alt="Contact Center Icon" class="w-20 h-20 mb-4 transition-transform duration-300 hover:scale-110">
+  <h3 class="text-xl font-semibold mb-2">Cloud Contact Center</h3>
+  <p>ระบบ Contact Center บนคลาวด์ที่รองรับการให้บริการ 24/7<br>
+    ช่วยยกระดับการติดต่อสื่อสารกับลูกค้าอย่างมืออาชีพ<br>
+    พร้อมรองรับทุกช่องทางและสถานการณ์</p>
+</div>
+
+<!-- Card 3 - System Integration -->
+<div class="p-6 rounded-xl shadow-md hover:shadow-xl transition-all duration-300 fade-up w-full h-[400px] flex flex-col justify-center items-center bg-gradient-to-r from-blue-100 via-blue-200 to-blue-300 text-gray-800 transform hover:-translate-y-2">
+  <img src="si-icon.png" alt="System Integration Icon" class="w-20 h-20 mb-4 transition-transform duration-300 hover:scale-110">
+  <h3 class="text-xl font-semibold mb-2">System Integration</h3>
+  <p>บริการระบบ SI ครบวงจรที่เชื่อมต่อเทคโนโลยีของคุณเข้าด้วยกัน <br>
+    สร้างความต่อเนื่องในการทำงานและเพิ่มประสิทธิภาพระบบไอทีของคุณ <br>
+    ด้วยทีมงานมืออาชีพที่มีประสบการณ์สูง</p>
+</div>
+
+  </div>
+</section>
+
+<!-- Articles -->
+<section class="py-20 bg-white text-center fade-up">
+  <h2 class="text-3xl font-bold mb-6">Articles</h2>
+  <p class="max-w-xl mx-auto mb-30 text-gray-600">แหล่งความรู้ ข้อมูลเชิงลึก และตัวอย่างจริง ในโลกของ IT & Digital Transformation.</p>
+
+  <div class="grid md:grid-cols-3 gap-8 px-6">
+    <!-- Article 1 -->
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-all">
+      <img src="article1.png" alt="Article 1 Image" class="w-full h-48 object-cover rounded-lg mb-4" />
+      <h3 class="text-xl font-semibold mb-2 text-blue-700">Cloud สำคัญกับธุรกิจอย่างไร</h3>
+      <p class="text-gray-600 mb-4 text-sm">มาดูกันว่า Cloud คืออะไร ช่วยเพิ่มประสิทธิภาพให้กับธุรกิจได้อย่างไร?</p>
+      <a href="article1.html" class="text-blue-600 font-medium hover:underline"> อ่านต่อเลย →</a>
+    </div>
+
+    <!-- Article 2 -->
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-all">
+      <img src="article2.png" alt="Article 1 Image" class="w-full h-48 object-cover rounded-lg mb-4" />
+      <h3 class="text-xl font-semibold mb-2 text-blue-700">Contact Center คืออะไร</h3>
+      <p class="text-gray-600 mb-4 text-sm">Contact Center นวัตกรรมยุคใหม่ที่ล้ำกว่า ปลอดภัยกว่า Call Center </p>
+      <a href="article2.html" class="text-blue-600 font-medium hover:underline"> อ่านต่อเลย →</a>
+
+    </div>
+
+    <!-- Article 3 -->
+    <div class="bg-gray-50 p-6 rounded-xl shadow hover:shadow-lg transition-all">
+      <img src="article3.png" alt="Article 1 Image" class="w-full h-48 object-cover rounded-lg mb-4" />
+      <h3 class="text-xl font-semibold mb-2 text-blue-700">Internet of Things สิ่งที่อยู่รอบตัวเรา</h3>
+      <p class="text-gray-600 mb-4 text-sm">ไม่ว่าเราจะหยิบจับเครื่องใช้ไฟฟ้า หรือเล่นแอพพลิเคชั่นต่างๆ Iots อยู่ข้างๆเราตลอด</p>
+      <a href="article3.html" class="text-blue-600 font-medium hover:underline"> อ่านต่อเลย →</a>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Partners Section with Light Blue Background -->
+<section class="py-20 bg-blue-50">
+  <div class="max-w-7xl mx-auto px-4 text-center">
+    <h2 class="text-3xl font-extrabold text-blue-800 mb-10 tracking-wide">OUR PARTNERS</h2>
+
+    <!-- Swiper -->
+    <div class="swiper myPartnerSwiper">
+      <div class="swiper-wrapper">
+
+        <!-- Partner 1 -->
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-6 shadow-md rounded-md w-56 h-56 flex items-center justify-center transform transition duration-300 hover:-translate-y-2">
+            <img src="microsoft.png" alt="Bethyl" class="max-h-48 object-contain transition-transform duration-300 hover:scale-110" />
+          </div>
+        </div>
+
+        <!-- Partner 2 -->
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-6 shadow-md rounded-md w-56 h-56 flex items-center justify-center transform transition duration-300 hover:-translate-y-2">
+            <img src="oceanbase.jpg" alt="Bethyl" class="max-h-48 object-contain transition-transform duration-300 hover:scale-110" />
+          </div>
+        </div>
+        
+        <!-- Partner 3 -->
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-6 shadow-md rounded-md w-56 h-56 flex items-center justify-center transform transition duration-300 hover:-translate-y-2">
+            <img src="gptbotai.png" alt="Bethyl" class="max-h-48 object-contain transition-transform duration-300 hover:scale-110" />
+          </div>
+        </div>        
+
+        <!-- Partner 4 -->
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-6 shadow-md rounded-md w-56 h-56 flex items-center justify-center transform transition duration-300 hover:-translate-y-2">
+            <img src="icewarp.png" alt="Bethyl" class="max-h-48 object-contain transition-transform duration-300 hover:scale-110" />
+          </div>
+        </div>
+        
+        <!-- Partner 5 -->
+        <div class="swiper-slide flex justify-center">
+          <div class="bg-white p-6 shadow-md rounded-md w-56 h-56 flex items-center justify-center transform transition duration-300 hover:-translate-y-2">
+            <img src="aws.png" alt="Bethyl" class="max-h-48 object-contain transition-transform duration-300 hover:scale-110" />
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section with Full Background Cover -->
+<section id="contact" class="py-20 bg-cover bg-center bg-no-repeat text-white" style="background-image: url('contact-bg.jpg');">
+  <div class="bg-black bg-opacity-70 backdrop-blur-sm px-6 py-12 max-w-6xl mx-auto rounded-lg">
+    <div class="flex flex-col md:flex-row md:justify-center md:items-start gap-10">
+      
+      <!-- Left: Line OA + Contact Info -->
+      <div class="md:w-1/2 space-y-6 text-center md:text-left">
+        <h3 class="text-xl font-bold">Line Official Account</h3>
+        <img src="https://qr-official.line.me/gs/M_711ukhez_GW.png?oat_content=qr"
+             alt="Line QR Code" class="w-40 mx-auto md:mx-0" />
+        <a href="https://lin.ee/Kp1ZNuH" target="_blank"
+           class="inline-block mt-2 px-4 py-2 bg-green-500 text-white rounded-full hover:bg-green-600 transition">
+          Add us now!
+        </a>
+
+        <div class="space-y-4 text-left mt-6">
+          <div class="flex items-start gap-3">
+            <span class="text-pink-400 text-lg mt-1">📍</span>
+            <div>
+              <p class="font-bold">ที่อยู่สำหรับติดต่อ</p>
+              <p>บริษัท Expanet Corp จำกัด<br>
+              2922/234-235, ชาญอิสสระทาวเวอร์ 2, ชั้น 17, เพชรบุรีตัดใหม่<br>
+              บางกะปิ, ห้วยขวาง, กรุงเทพมหานคร 10310<br>
+              เลขทะเบียนนิติบุคคล 0105547122105</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-blue-300 text-lg mt-1">📧</span>
+            <div>
+              <p class="font-bold">อีเมล</p>
+              <a href="mailto:admin@expanetcorp.com" class="hover:underline">admin@expanetcorp.com</a>
+            </div>
+          </div>
+          <div class="flex items-start gap-3">
+            <span class="text-red-400 text-lg mt-1">📞</span>
+            <div>
+              <p class="font-bold">เบอร์ติดต่อ</p>
+              <p>02-506-06666 (Support Hotline)<br>061-880-8889 (คุณไกรทศ)<br>
+              097-220-5260 (คุณรตนธรรม)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="md:w-1/2">
+        <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+        <form action="sendmail.php" method="POST" class="space-y-4">
+          <input type="text" name="name" placeholder="Your Name" required
+                 class="w-full px-4 py-2 rounded bg-white text-black" />
+          <input type="email" name="email" placeholder="Your Email" required
+                 class="w-full px-4 py-2 rounded bg-white text-black" />
+          <textarea name="message" rows="5" placeholder="Your Message" required
+                    class="w-full px-4 py-2 rounded bg-white text-black"></textarea>
+          <button type="submit"
+                  class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white font-semibold transition">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Expanet Corp | contact@yourdomain.com</p>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <div id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">
+    ↑
+  </div>
+
+  <!-- Floating Contact Icons -->
+  <div class="floating-contact">
+    <a href="https://line.me/ti/p/@711ukhez" target="_blank"><img src="line-icon.png" alt="Line"></a>
+    <a href="https://m.me/320956221094471" target="_blank"><img src="messenger-icon.png" alt="Messenger"></a>
+    <a href="mailto:ratanatam@expanetcorp.com"><img src="email-icon.png" alt="Email"></a>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- ✅ Swiper Configuration -->
+<script>
+  const partnerSwiper = new Swiper(".myPartnerSwiper", {
+    slidesPerView: "auto",
+    spaceBetween: 30,
+    loop: true,
+    freeMode: true,
+    speed: 4000,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: { slidesPerView: 2 },
+      768: { slidesPerView: 3 },
+      1024: { slidesPerView: 5 },
+    },
+  });
+</script>
+
+  
+  <script>
+    // Scroll animation
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => observer.observe(el));
+
+    // Swiper init
+    const swiper = new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+      },
+      breakpoints: {
+        640: { slidesPerView: 2 },
+        768: { slidesPerView: 3 },
+        1024: { slidesPerView: 4 }
+      }
+    });
+
+    // Back to Top show/hide
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.style.display = window.scrollY > 300 ? 'flex' : 'none';
+    });
+  </script>
+
+  </body>
+  </html>
+<!-- end of GPT script provided -->
+
